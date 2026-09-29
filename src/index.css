@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.roulette-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #c6a15b;
+  box-shadow: 0 0 0 0 rgba(198, 161, 91, 0.7);
+  animation: pulse-dot 1.6s infinite;
+}
+
+@keyframes pulse-dot {
+  70% {
+    box-shadow: 0 0 0 8px rgba(198, 161, 91, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(198, 161, 91, 0);
+  }
+}
